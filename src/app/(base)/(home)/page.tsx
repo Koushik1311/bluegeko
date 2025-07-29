@@ -8,7 +8,6 @@ import {
   FileText,
   Globe,
   Lightbulb,
-  MoveRight,
   Package,
   Presentation,
   Rocket,
@@ -614,7 +613,7 @@ export default function HomePage() {
       </section>
 
       {/* Team */}
-      <section className="text-center mt-24 py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900 text-white">
+      <section className="text-center mt-24 pt-20 pb-8 bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900 text-white">
         <div className="mb-16">
           <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 mb-4 bg-purple-500/20 text-purple-300 border-purple-400">
             Meet the Team Behind Bluegeko
@@ -741,6 +740,31 @@ export default function HomePage() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="text-center mt-24">
+        <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 mb-4 bg-green-50 text-green-700 border-green-200">
+          Off-Market Access
+        </div>
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Stay Connected with Off-Market Deals
+        </h1>
+        <p className="text-lg text-gray-600 mb-8">
+          Be the first to hear about exclusive startup investment opportunities
+          from across our global network.
+        </p>
+
+        <div className="mt-6 flex flex-col sm:flex-row items-center gap-3 max-w-md mx-auto">
+          <input
+            type="email"
+            placeholder="youremail@domain.com"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-grays-500 bg-gray-50 text-gray-800 transition-colors"
+          />
+          <button className="bg-gray-900 hover:bg-gray-800 text-white px-5 py-2 rounded-lg font-medium transition-colors cursor-pointer text-nowrap">
+            Connect
+          </button>
         </div>
       </section>
     </div>
