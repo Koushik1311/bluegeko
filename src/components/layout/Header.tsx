@@ -16,7 +16,7 @@ const links = [
 
 export default function Header() {
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-xs">
+    <div className="fixed top-0 left-0 right-0 z-50 bg-white/85 backdrop-blur-sm border-b border-gray-200 shadow-xs">
       <Container className="py-3 flex items-center justify-between">
         {/* Logo */}
         <div>
