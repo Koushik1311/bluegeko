@@ -1,18 +1,8 @@
-import Link from "next/link";
 import Container from "../global/Container";
 import { MoveRight } from "lucide-react";
+import { Quicksand } from "next/font/google";
 
-const links = [
-  {
-    label: "Home",
-    href: "/",
-  },
-  { label: "Investors", href: "#investors" },
-  { label: "Startups", href: "#startups" },
-  { label: "Our Team", href: "#team" },
-  { label: "Portfolio", href: "#portfolio" },
-  { label: "Let's Talk", href: "#contact" },
-];
+const quicksand = Quicksand({ subsets: ["latin"] });
 
 export default function Header() {
   return (
@@ -20,16 +10,9 @@ export default function Header() {
       <Container className="py-3 flex items-center justify-between">
         {/* Logo */}
         <div>
-          <h1 className="text-xl">bluegeko</h1>
-        </div>
-
-        {/* Links */}
-        <div className="text-gray-600 text-sm font-medium flex items-center gap-4">
-          {links.map((link, index) => (
-            <Link href={link.href} key={index}>
-              {link.label}
-            </Link>
-          ))}
+          <h1 className={`${quicksand.className} text-3xl font-extrabold`}>
+            bluegeko
+          </h1>
         </div>
 
         {/* Let's talk */}

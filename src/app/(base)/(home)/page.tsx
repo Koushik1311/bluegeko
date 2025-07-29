@@ -20,7 +20,7 @@ import Image from "next/image";
 
 export default function HomePage() {
   return (
-    <div className="mt-28 pb-10">
+    <div className="mt-28">
       {/* Hero section */}
       <section className="text-center relative overflow-hidden bg-gradient-to-b from-white to-gray-50">
         <div className="flex items-center justify-center gap-4 text-sm font-medium mb-8">
