@@ -17,7 +17,7 @@ export default function Header() {
 
         {/* Let's talk */}
         <div>
-          <button className="inline-flex gap-1 items-center rounded-full border px-4 py-2 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-blue-100 bg-blue-50 text-blue-700 border-blue-200 text-sm cursor-pointer">
+          <button className="inline-flex gap-1 items-center rounded-lg border px-5 py-2 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-blue-100 bg-blue-50 text-blue-700 border-blue-200 text-sm cursor-pointer">
             <span>Let&apos;s Talk</span>
             <MoveRight size={14} />
           </button>

@@ -8,6 +8,7 @@ import {
   FileText,
   Globe,
   Lightbulb,
+  MoveRight,
   Package,
   Presentation,
   Rocket,
@@ -37,6 +38,13 @@ export default function HomePage() {
             <span>$150M+ Capital Invested</span>
           </div>
         </div>
+
+        <div className="inline-block mb-8">
+          <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-full text-sm font-medium shadow-lg">
+            🚀 No Upfront Commitments – Just Results
+          </div>
+        </div>
+
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 max-w-6xl mx-auto leading-[60px] px-4 mb-8">
           From Pitch to Product—We Bridge Startups with Capital
         </h1>
@@ -78,6 +86,19 @@ export default function HomePage() {
               <ChartSpline size={16} />
               <>Avg. Portfolio Growth</>
             </div>
+          </div>
+        </div>
+
+        <div className="inline-flex">
+          <div className="flex flex-col sm:flex-row gap-4">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-all cursor-pointer">
+              Submit your Startup
+            </button>
+
+            <button className="inline-flex gap-1 items-center rounded-lg border px-8 py-3 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-blue-100 bg-blue-50 text-blue-700 border-blue-200 text-sm cursor-pointer">
+              <span>Let&apos;s Talk</span>
+              <MoveRight size={14} />
+            </button>
           </div>
         </div>
       </section>
@@ -210,12 +231,6 @@ export default function HomePage() {
               feedback.
             </p>
           </div>
-        </div>
-
-        <div className="text-center mt-12">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all cursor-pointer">
-            <span>Talk with us</span>
-          </button>
         </div>
       </section>
 
@@ -597,17 +612,41 @@ export default function HomePage() {
           visionary teams scale and exit with impact.
         </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-100 text-start">
-            <div className="mb-4">
-              <Image src={"/logo/cd.webp"} alt="CD" width={500} height={500} />
+        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+            <div className="mb-4 w-12 h-12 mx-auto border-2 rounded-full border-green-600 flex items-center justify-center text-green-600 font-extrabold text-xl">
+              CD
             </div>
-            <h2 className="font-bold text-gray-900 mb-2">Crazy Domains</h2>
-            <p className="text-gray-600 text-sm">
+            <h2 className="font-semibold text-gray-900 mb-3">Crazy Domains</h2>
+            <p className="text-gray-600 text-sm mb-3">
               Listed on the ASX (DN8) after DN8 was privatized in late 2019 and
               acquired in
             </p>
-            <h3 className="font-semibold text-gray-600">Private Acquisition</h3>
+            <h3 className="font-medium text-gray-900">Private Acquisition</h3>
+          </div>
+
+          <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+            <div className="mb-4 w-12 h-12 mx-auto border-2 rounded-full border-red-600 flex items-center justify-center text-red-600 font-extrabold text-xl">
+              V
+            </div>
+            <h2 className="font-semibold text-gray-900 mb-3">
+              Vodien Cloud Hosting
+            </h2>
+            <p className="text-gray-600 text-sm mb-3">
+              Singapore&apos;s #1 Web Hosting Provider, Data Center
+            </p>
+            <h3 className="font-medium text-gray-900">$30M - Raised Capital</h3>
+          </div>
+
+          <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+            <div className="mb-4 w-12 h-12 mx-auto border-2 rounded-full border-pink-600 flex items-center justify-center text-pink-600 font-extrabold text-xl">
+              S
+            </div>
+            <h2 className="font-semibold text-gray-900 mb-3">Siteplus.com</h2>
+            <p className="text-gray-600 text-sm mb-3">
+              SaaS intuitive AI Website Builder Applciation
+            </p>
+            <h3 className="font-medium text-gray-900">$15M - Raised Capital</h3>
           </div>
         </div>
       </section>
