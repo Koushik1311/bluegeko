@@ -13,6 +13,7 @@ import {
   Presentation,
   Rocket,
   Shield,
+  TrendingUp,
   Users,
   X,
   Zap,
@@ -24,7 +25,7 @@ export default function HomePage() {
     <div className="mt-28">
       {/* Hero section */}
       <section className="text-center relative overflow-hidden bg-gradient-to-b from-white to-gray-50">
-        <div className="flex items-center justify-center gap-4 text-sm font-medium mb-8">
+        <div className="flex flex-wrap items-center justify-center gap-4 text-sm font-medium mb-8">
           <div className="inline-flex gap-1 items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 bg-blue-50 text-blue-700 border-blue-200 text-xs sm:text-sm">
             <Package size={14} />
             <span>40+ AI & Fintech Products Built</span>
@@ -596,6 +597,30 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+
+          <div className="bg-blue-50 rounded-xl p-6 border border-blue-200 mt-20">
+            <div className="inline-flex items-center gap-4 mb-4">
+              <Rocket size={32} className="text-blue-600" />
+              <Zap size={32} className="text-violet-600" />
+              <TrendingUp size={32} className="text-green-600" />
+            </div>
+            <h1 className="text-2xl font-bold mb-3">
+              We Also Invest in Future-Defining Startups
+            </h1>
+            <p className="text-gray-600 max-w-3xl mx-auto mb-6">
+              Beyond helping founders raise capital, Bluegeko actively partners
+              with and invests in early-stage startups that are redefining the
+              future of enterprise tech. We look for ambitious teams building
+              defensible technology with global potential. Our investment focus
+              includes cutting-edge sectors like AI, Machine Learning, Quantum
+              Computing, Robotics, Advanced Materials, Cybersecurity, Space &
+              Aerospace, Energy Innovation, and next-gen Enterprise
+              Applications.
+            </p>
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-lg hover:shadow-xl transition-all cursor-pointer">
+              Submit your Startup
+            </button>
+          </div>
         </Container>
       </section>
 
@@ -795,7 +820,7 @@ export default function HomePage() {
           from across our global network.
         </p>
 
-        <div className="mt-6 flex flex-col sm:flex-row items-center gap-3 max-w-md mx-auto">
+        <div className="mt-6 flex flex-col sm:flex-row items-center gap-3 max-w-md mx-auto px-3">
           <input
             type="email"
             placeholder="youremail@domain.com"
